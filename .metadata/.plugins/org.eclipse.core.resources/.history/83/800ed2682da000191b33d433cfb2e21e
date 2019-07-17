@@ -1,0 +1,22 @@
+package formula1;
+
+public final class Person {
+
+	private String firstName;
+	private String surname;
+
+	public Person(String firstName, String surname) {
+		super();
+		this.firstName = firstName;
+		this.surname = surname;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+}

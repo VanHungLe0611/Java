@@ -1,0 +1,10 @@
+package library;
+
+public class Member extends Person{
+	private static int nextID;
+	private int memberID;
+	
+	
+	
+
+}

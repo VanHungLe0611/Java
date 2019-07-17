@@ -1,0 +1,16 @@
+package impedance;
+
+public class Inductor {
+
+	private double valueInHenry;
+
+	public Inductor(double valueInHenry) {
+		super();
+		this.valueInHenry = valueInHenry;
+	}
+
+	public double getValueInHenry() {
+		return valueInHenry;
+	}
+
+}

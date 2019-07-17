@@ -1,0 +1,33 @@
+package formula1;
+
+import java.util.ArrayList;
+
+public class RacingSeason {
+	private ArrayList<RacingTeam> teams = new ArrayList<RacingTeam>();
+	private ArrayList<RaceResult> races = new ArrayList<RaceResult>();
+
+	public RacingSeason() {
+		super();
+	}
+
+	public void addTeam(RacingTeam team) {
+		if (!teams.contains(team)) {
+			teams.add(team);
+
+		}
+	}
+
+	public void addRaceResults(RaceResult race) {
+		if (!races.contains(race)) {
+			races.add(race);
+		}
+	}
+
+	public RaceResult[] getRaces() {
+		return races.toArray(new RaceResult[races.size()]);
+	}
+	
+	public Driver[] getDriverRanking() {
+		
+	}
+}

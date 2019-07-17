@@ -1,0 +1,25 @@
+package impedance;
+
+import java.util.ArrayList;
+
+public class ParallelCircuit {
+	private ArrayList<Impedance> impedances = new ArrayList<Impedance>();
+
+	public ParallelCircuit() {
+		super();
+
+	}
+
+	public void addImpedance(Impedance impedance) {
+		if (impedance != null) {
+			impedances.add(impedance);
+
+		}
+
+	}
+
+	public Impedance[] getImpedances() {
+		return impedances.toArray(new Impedance[impedances.size()]);
+	}
+
+}

@@ -1,0 +1,35 @@
+package library;
+
+import java.util.ArrayList;
+
+public class Library {
+	private ArrayList<Member> members = new ArrayList<Member>();
+	private ArrayList<Book> books = new ArrayList<Book>();
+
+	public void addMember(Member member) {
+		if (!members.contains(member)) {
+			members.add(member);
+		}
+	}
+
+	public void addBook(Book book) {
+		if (!books.contains(book)) {
+			books.add(book);
+
+		}
+	}
+
+	public Book lendBook(Member member, Person author, String title) {
+		for (Book book : books) {
+			if (book.getAuthor().getFirstName().equals(author.getFirstName())
+					&& book.getAuthor().getSurname().equals(author.getSurname()) && book.getTitle().equals(title)) {
+				if (book.getMember() == null) {
+					book.setMember(member);
+				}
+
+			}
+
+		}
+	}
+
+}

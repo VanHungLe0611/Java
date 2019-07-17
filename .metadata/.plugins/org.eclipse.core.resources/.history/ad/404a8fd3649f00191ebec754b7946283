@@ -1,0 +1,14 @@
+package impedance;
+
+public class Resistor  extends Impedance{
+	
+	
+	private double valueInOhm;
+
+	@Override
+	public Complex getImpedanceAtOmega(Double omega) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

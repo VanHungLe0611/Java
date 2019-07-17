@@ -1,0 +1,44 @@
+package formula1;
+
+import java.util.ArrayList;
+
+public class Driver extends Person implements Comparable<Driver> {
+	private RacingTeam team;
+	ArrayList<RaceResult> races = new ArrayList<RaceResult>();
+
+	public Driver(String firstName, String surName, RacingTeam team) {
+		super(firstName, surName);
+		this.team = team;
+		this.team.addDriver(this);
+
+	}
+
+	public RacingTeam getRacingTeam() {
+		return team;
+	}
+
+	public void addRace(RaceResult race) {
+		if (!races.contains(race)) {
+			races.add(race);
+		}
+	}
+
+	public int getGrandPrixPoints() {
+		int summe = 0;
+		for (RaceResult raceResult : races) {
+			summe = raceResult.getDriverPoints(this);
+		}
+		return summe;
+
+	}
+
+	public int compareTo(Driver other) {
+		if ((other.getGrandPrixPoints() - this.getGrandPrixPoints()) < 0) {
+			return -1;
+		} else if ((other.getGrandPrixPoints() - this.getGrandPrixPoints()) > 0) {
+			return 1;
+		} else
+			return 0;
+	}
+
+}

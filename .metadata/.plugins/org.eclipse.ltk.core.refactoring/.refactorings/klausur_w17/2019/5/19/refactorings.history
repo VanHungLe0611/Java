@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;text&apos; in &apos;gui.Keypad&apos; to &apos;Atext&apos;&#x0A;- Original project: &apos;klausur_w17&apos;&#x0A;- Original element: &apos;gui.Keypad.text&apos;&#x0A;- Renamed element: &apos;gui.Keypad.Atext&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;text&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/&lt;gui{Keypad.java[Keypad^text" name="Atext" references="true" setter="false" stamp="1557673564458" textual="false" version="1.0"/>
+</session>

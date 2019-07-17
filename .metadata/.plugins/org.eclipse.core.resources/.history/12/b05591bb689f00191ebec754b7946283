@@ -1,0 +1,12 @@
+package impedance;
+
+public class NegativeNumberException extends RuntimeException{
+	
+	public NegativeNumberException(double number) {
+		super(number + "");
+	}
+	
+
+	
+
+}

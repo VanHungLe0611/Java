@@ -1,0 +1,15 @@
+package impedance;
+
+public class NegativeNumberException extends Exception{
+	
+	public NegativeArraySizeException(String message) {
+		super(message);
+	}
+	
+	public NegativeArraySizeException(double number) {
+		
+	}
+
+	
+
+}

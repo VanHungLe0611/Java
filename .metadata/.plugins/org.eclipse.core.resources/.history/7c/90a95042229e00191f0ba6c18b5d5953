@@ -1,0 +1,13 @@
+package library;
+
+public class Member extends Person{
+	private static int nextID;
+	private int memberID;
+	
+	public Member(String firstName, String surname) {
+		super(firstName, surname);
+		nextID = nextID + 1;
+	}
+	
+
+}

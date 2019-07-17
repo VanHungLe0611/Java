@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;flightTones&apos; to &apos;flightZones&apos;&#x0A;- Original project: &apos;klausur_s18&apos;&#x0A;- Original element: &apos;klausur_s18/src/flightTones&apos;&#x0A;- Renamed element: &apos;klausur_s18/src/flightZones&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;flightTones&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;flightTones" name="flightZones" qualified="false" references="true" stamp="1558957533211" textual="false" version="1.0"/>
+</session>

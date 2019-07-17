@@ -1,0 +1,41 @@
+package formula1;
+
+import java.util.ArrayList;
+
+public class RacingSeason implements Comparable<Driver>{
+	private ArrayList<RaceResult> races = new ArrayList<RaceResult>();
+	private ArrayList<RacingTeam> teams = new ArrayList<RacingTeam>();
+
+	public RacingSeason() {
+		super();
+	}
+
+	public void addTeam(RacingTeam team) {
+		if (!teams.contains(team)) {
+			teams.add(team);
+		}
+	}
+
+	public void addRaceResults(RaceResult race) {
+		if (!races.contains(race)) {
+			races.add(race);
+		}
+	}
+	
+	public RaceResult[] getRaces() {
+		return races.toArray(new RaceResult[races.size()]);
+	}
+	
+	public Driver[] getDriverRanking() {
+		for (RaceResult raceResult : races) {
+			
+		}
+	}
+
+	@Override
+	public int compareTo(Driver o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

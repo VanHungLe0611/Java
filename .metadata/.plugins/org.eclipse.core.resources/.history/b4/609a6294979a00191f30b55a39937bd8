@@ -1,0 +1,55 @@
+package seatingPlan;
+
+import java.util.ArrayList;
+
+public class SeatingPlan {
+
+	private String aircraftName;
+	private int numberSeats;
+	private int seatsPerRow;
+	private ArrayList<AircraftSeat> seats = new ArrayList<AircraftSeat>();
+
+	public SeatingPlan(String aircraftName, int numberSeats, int seatsPerRow) {
+		super();
+		this.aircraftName = aircraftName;
+		this.numberSeats = numberSeats;
+		this.seatsPerRow = seatsPerRow;
+
+		char position = 'A';
+		int rowNumber = 1;
+		AircraftSeat aircraftSeat = new AircraftSeat(rowNumber, position);
+		for (int i = 0; i < numberSeats; i++) {
+			seats.add(aircraftSeat);
+			position++;
+			if (rowNumber == seatsPerRow) {
+				rowNumber++;
+				position = 'A';
+			}
+
+			if (rowNumber == 13) {
+				rowNumber = 14;
+
+			}
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	public String getAircraftName() {
+		return aircraftName;
+	}
+
+	public int getNumberSeats() {
+		return numberSeats;
+	}
+
+	public int getSeatsPerRow() {
+		return seatsPerRow;
+	}
+
+}

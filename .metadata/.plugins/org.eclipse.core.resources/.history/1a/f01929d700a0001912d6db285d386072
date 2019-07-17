@@ -1,0 +1,34 @@
+package formula1;
+
+public class RaceResult {
+	private String grandPrixName;
+	private Driver[] driverFinish;
+
+	public RaceResult(String grandPrixName, Driver[] driverFinish) {
+		super();
+		this.grandPrixName = grandPrixName;
+		this.driverFinish = driverFinish;
+		for (Driver driver : driverFinish) {
+			driver.addRace(this);
+		}
+	}
+
+	public String getName() {
+		return this.grandPrixName;
+	}
+
+	public int getDriverPoints(Driver driver) {
+
+		int[] pointLUT = new int[] { 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 };
+
+		for (int i = 0; i < driverFinish.length; i++) {
+			if (driver.equals(driverFinish[i])) {
+				return pointLUT[i];
+			}
+
+		}
+		return 0;
+
+	}
+
+}

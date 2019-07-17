@@ -1,0 +1,11 @@
+package library;
+
+public class Book {
+	private Person author;
+	private String title;
+	private Member member;
+	
+	
+	
+
+}

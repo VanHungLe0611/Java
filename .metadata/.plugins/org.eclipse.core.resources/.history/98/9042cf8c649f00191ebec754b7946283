@@ -1,0 +1,5 @@
+package impedance;
+
+public abstract class Impedance {
+
+}

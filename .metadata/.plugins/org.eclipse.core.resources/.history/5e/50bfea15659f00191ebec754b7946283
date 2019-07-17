@@ -1,0 +1,21 @@
+package impedance;
+
+public class Resistor extends Impedance {
+
+	private double valueInOhm;
+
+	public Resistor(double valueInOhm) {
+		this.valueInOhm = valueInOhm;
+	}
+
+	public double getValueInOhm() {
+		return valueInOhm;
+	}
+
+	@Override
+	public Complex getImpedanceAtOmega(Double omega) {
+
+		return new Complex(valueInOhm, 0);
+	}
+
+}

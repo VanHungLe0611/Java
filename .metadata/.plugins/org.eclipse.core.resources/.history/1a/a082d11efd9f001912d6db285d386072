@@ -1,0 +1,24 @@
+package formula1;
+
+import java.util.ArrayList;
+
+public class Driver extends Person {
+	private RacingTeam team = new RacingTeam();
+	private ArrayList<RaceResult> races = new ArrayList<RaceResult>();
+
+	public Driver(String firstName, String surname, RacingTeam team) {
+		super(firstName, surname);
+
+	}
+
+	public RacingTeam getRacingTeam() {
+		return this.team;
+	}
+
+	public void addRace(RaceResult race) {
+		if (!races.contains(race)) {
+			races.add(race);
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+package familyTree;
+
+public class Person {
+
+	private String firstName;
+	private String surName;
+
+	public Person(String firstName, String surName) {
+		super();
+		this.firstName = firstName;
+		this.surName = surName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getSurName() {
+		return surName;
+	}
+
+	public boolean equals(Object obj) {
+		if (obj instanceof Person) {
+			Person another = (Person) obj;
+			if (this.firstName.equals(another.firstName) && this.surname.equals(another.surname)) {
+				return true;
+			}
+		}
+		return false;
+
+	}
+
+}

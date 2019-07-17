@@ -1,0 +1,102 @@
+package familyTree;
+
+import java.util.ArrayList;
+
+public class FamilyMember extends Person {
+
+	private int birthYear;
+	private boolean isMale;
+	private FamilyMember mother;
+	private FamilyMember father;
+	private ArrayList<FamilyMember> children = new ArrayList<FamilyMember>();
+
+	public FamilyMember(String firstName, String surname, int birthYear, boolean isMale) {
+		super(firstName, surname);
+		this.birthYear = birthYear;
+		this.isMale = isMale;
+
+	}
+
+	public int getBirthYear() {
+		return birthYear;
+	}
+
+	public FamilyMember getMother() {
+		return mother;
+	}
+
+	public FamilyMember getFather() {
+		return father;
+	}
+	
+	public FamilyMember[] getChildren() {
+		return children.toArray(new FamilyMember[children.size()]);
+	}
+	
+	public void setMother(FamilyMember mother) {
+		this.mother = mother;
+	}
+	
+	public void setFather(FamilyMember father) {
+		this.father = father;
+	}
+	
+	public void addChild(FamilyMember child) {
+		if (!children.contains(child)) {
+			children.add(child);
+		}
+	}
+	
+	public String toString() {
+		return null;
+	}
+	
+	public boolean equals(Object obj) {
+		if (obj instanceof FamilyMember) {
+			FamilyMember other = (FamilyMember) obj;
+			if (this.getFirstName().equals(other.getFirstName()) && this.getSurname().equals(other.getSurname())
+					&& this.getBirthYear() == other.birthYear && this.isMale == other.isMale) {
+				return true;
+			}
+		}
+		return false;
+
+	}
+
+	public int compareTo(FamilyMember other) {
+		if (this.getFirstName().equals(other.getFirstName())) {
+			if (this.getSurname().equals(other.getSurname())) {
+				if (this.getBirthYear() == other.getBirthYear()) {
+					return 0;
+				} else {
+					if (this.getBirthYear() - other.getBirthYear() < 0) {
+						return -1;
+					} else if (this.getBirthYear() - other.getBirthYear() > 0) {
+						return 1;
+					} else {
+						return 0;
+					}
+				}
+			} else {
+				if (this.getSurname().compareTo(other.getSurname()) < 0) {
+					return -1;
+				} else if (this.getSurname().compareTo(other.getSurname()) > 0) {
+					return 1;
+				} else
+					return 0;
+			}
+
+		} else {
+			if (this.getFirstName().compareTo(other.getFirstName()) < 0) {
+				return -1;
+			} else if (this.getFirstName().compareTo(other.getFirstName()) > 0) {
+				return 1;
+			} else
+				return 0;
+		}	
+	}
+	
+	
+
+	
+}

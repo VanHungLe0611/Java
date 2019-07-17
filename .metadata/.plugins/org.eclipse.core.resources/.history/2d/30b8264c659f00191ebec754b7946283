@@ -1,0 +1,32 @@
+package impedance;
+
+public class Resistor extends Impedance implements Comparable<Resistor> {
+
+	private double valueInOhm;
+
+	public Resistor(double valueInOhm) {
+		this.valueInOhm = valueInOhm;
+	}
+
+	public double getValueInOhm() {
+		return valueInOhm;
+	}
+
+	@Override
+	public Complex getImpedanceAtOmega(Double omega) {
+
+		return new Complex(valueInOhm, 0);
+	}
+
+	public int compareTo(Resistor other) {
+		if (this.valueInOhm < other.getValueInOhm()) {
+			return -1;
+
+		} else if (this.valueInOhm > other.getValueInOhm()) {
+			return 1;
+
+		} else
+			return 0;
+	}
+
+}

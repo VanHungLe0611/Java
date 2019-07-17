@@ -1,0 +1,18 @@
+package familyTree;
+
+import java.util.ArrayList;
+
+public class FamilyTree {
+	private ArrayList<FamilyMember> familyMembers = new ArrayList<FamilyMember>();
+
+	public FamilyTree() {
+		super();
+	}
+
+	public FamilyMember creatPerson(String firstName, String surname, int birthYear, boolean isMale) {
+		FamilyMember familyMember = new FamilyMember(firstName, surname, birthYear, isMale);
+		familyMembers.add(familyMember);
+		return familyMember;
+	}
+
+}

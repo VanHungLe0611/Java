@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;gui.StoppUhr&apos; to &apos;Stoppuhr&apos;&#x0A;- Original project: &apos;klausur_s18&apos;&#x0A;- Original element: &apos;gui.StoppUhr&apos;&#x0A;- Renamed element: &apos;gui.Stoppuhr&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StoppUhr&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;gui{StoppUhr.java[StoppUhr" matchStrategy="1" name="Stoppuhr" qualified="false" references="true" similarDeclarations="false" stamp="1559633037600" textual="false" version="1.0"/>
+</session>

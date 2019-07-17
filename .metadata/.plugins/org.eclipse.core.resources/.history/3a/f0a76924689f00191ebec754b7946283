@@ -1,0 +1,12 @@
+package impedance;
+
+public class NegativeNumberException extends RuntimeException{
+	
+	public NegativeArraySizeException(double number) {
+		if (number < 0) {
+			return NegativeNumberException();
+			
+		}
+	}
+
+}

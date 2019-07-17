@@ -1,0 +1,27 @@
+package library;
+
+public class Book {
+
+	private Person author;
+	private String title;
+	private Member member = null;
+
+	public Book(Person author, String title) {
+		this.author = author;
+		this.title = title;
+
+	}
+
+	public Person getAuthor() {
+		return author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public Member getMember() {
+		return member;
+	}
+
+}

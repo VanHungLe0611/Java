@@ -1,0 +1,6 @@
+package impedance;
+
+public class Capacitor {
+	private double valueInFarad;
+
+}

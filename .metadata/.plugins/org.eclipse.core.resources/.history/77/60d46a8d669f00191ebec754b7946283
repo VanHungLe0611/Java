@@ -1,0 +1,20 @@
+package impedance;
+
+import java.util.ArrayList;
+
+public class SeriesCircuit {
+	private ArrayList<Impedance> impedances = new ArrayList<Impedance>();
+
+	public SeriesCircuit() {
+		super();
+	}
+	
+	public void addImpedance(Impedance impedance) {
+		if (impedance != null) {
+			impedances.add(impedance);
+			
+		}
+		
+	}
+
+}

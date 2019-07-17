@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;longtitude&apos; in &apos;lab1.geoPosition.GeoPosition&apos; to &apos;longitude&apos;&#x0A;- Original project: &apos;Praktikum&apos;&#x0A;- Original element: &apos;lab1.geoPosition.GeoPosition.longtitude&apos;&#x0A;- Renamed element: &apos;lab1.geoPosition.GeoPosition.longitude&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;longtitude&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;lab1.geoPosition{GeoPosition.java[GeoPosition^longtitude" name="longitude" references="true" setter="false" stamp="1555244821210" textual="false" version="1.0"/>
+</session>
